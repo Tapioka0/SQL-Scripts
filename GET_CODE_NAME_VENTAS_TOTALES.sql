@@ -1,0 +1,1 @@
+SELECT v.Cajero,c.Nombre, count(v.Cajero) FROM Venta AS v LEFT JOIN Cajeros AS c ON v.Cajero = c.Cajero GROUP BY v.Cajero;
